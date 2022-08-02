@@ -1,0 +1,7 @@
+CREATE DATABASE Task;
+
+CREATE TABLE Emails(
+  Id SERIAL PRIMARY KEY,
+  mail VARCHAR(255),
+  channel VARCHAR(255)
+);
