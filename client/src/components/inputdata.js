@@ -1,3 +1,4 @@
+import './Inputdata.css';
 import React, { Fragment, useState } from "react";
 
 const InputData = () => {
@@ -40,32 +41,29 @@ const InputData = () => {
 
   return (
     <Fragment>
-      <h1 className="text-center mt-5">Email Subscription</h1>
-      <form className="d-flex mt-5" onSubmit={onSubmitForm}>
-      <label for="exampleInputEmail1">Email address</label>
+      <div className="app">
+      <h1 >Email Subscription</h1>
+      <form  onSubmit={onSubmitForm}>
+      <label >Email address</label>
         <input
           type="text"
-          className="form-control"
           value={mail}
           onChange={e => setMail(e.target.value)}
         />
 
-        <label for="exampleInputEmail1">channel name</label>
+        <label>channel name</label>
 
         <input
           type="text"
-          className="form-control"
+          
           value={channel}
           onChange={e => setChannel(e.target.value)}
         />
         
-        <button className="btn btn-success">Add</button>
+        <button >Add</button>
 
-                
-            
-        
-           
       </form>
+      </div>
     </Fragment>
   );
 };
